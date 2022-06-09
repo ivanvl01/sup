@@ -1,0 +1,14 @@
+* {
+  --backgroundColor: {{ initParams.backgroundColor }};
+
+}
+#root {
+  height: 100%;
+  background-color: var(--backgroundColor);
+}
+
+#root1,#root2,#root3,#root4,#root5,#root6,#root7,#root8{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

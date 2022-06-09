@@ -1,0 +1,41 @@
+* {
+    --fontColor: {{ initParams.intro.fontColor }};
+    --titleFontSize: {{ initParams.intro.titleFontSize}};
+    --sloganFontSize: {{ initParams.intro.sloganFontSize}};
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+}
+.photo{
+  width: 30%;
+  height: 100%;
+  background-color: red;
+}
+.details{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fae281;
+  gap: 10%;
+}
+.date{
+  align-self:flex-end;
+  border: 1px solid red;
+  margin: 10px;
+}
+.product{
+  align-self:center;
+}
+.product-details{
+  width: 20%;
+}
+
+
+
+

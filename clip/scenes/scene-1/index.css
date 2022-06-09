@@ -1,0 +1,73 @@
+* {
+    --fontColor: {{ initParams.intro.fontColor }};
+    --titleFontSize: {{ initParams.intro.titleFontSize}};
+    --sloganFontSize: {{ initParams.intro.sloganFontSize}};
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  gap: 0;
+}
+
+.intro{
+  width: 33.33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro.left .image{
+ background: url(assets/image1.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ height: 100%;
+}
+
+.intro.right .image{
+  background: url(assets/image2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+ }
+
+.side-reveal{
+  position: absolute;
+  left: -100%;
+}
+
+.intro-details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--fontColor);
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+  background: url(assets/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-family: 'Playfair Display', serif;
+  font-size: var(--titleFontSize);
+}
+
+.slogan{
+  font-family: 'Lato', sans-serif;
+  font-size: var(--sloganFontSize);
+}
+
