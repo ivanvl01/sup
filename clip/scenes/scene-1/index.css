@@ -1,5 +1,5 @@
 * {
-    --fontColor: {{ initParams.intro.fontColor }};
+    --fontColor: {{ initParams.titleFontColor }};
     --titleFontSize: {{ initParams.intro.titleFontSize}};
     --sloganFontSize: {{ initParams.intro.sloganFontSize}};
 }

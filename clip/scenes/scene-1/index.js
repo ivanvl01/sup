@@ -15,6 +15,10 @@ const clip = new HTMLClip({
   },
   initParams: {
     intro: "@initParams.intro",
+    logo:"@initParams.logo",
+    title:"@initParams.title",
+    slogan:"@initParams.slogan",
+    titleFontColor:"@initParams.titleFontColor"
   },
 });
 

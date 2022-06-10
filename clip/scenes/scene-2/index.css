@@ -1,5 +1,5 @@
 * {
-    --fontColor: {{ initParams.intro.fontColor }};
+    --titleFontColor: {{ initParams.titleFontColor }};
     --titleFontSize: {{ initParams.intro.titleFontSize}};
     --sloganFontSize: {{ initParams.intro.sloganFontSize}};
 }
@@ -11,31 +11,97 @@
   height: 100%;
   opacity:0;
 }
-.photo{
+.photo-wrapper{
+  position: relative;
   width: 30%;
   height: 100%;
   background-color: red;
+  overflow: hidden;
+}
+
+.photo{
+  position: absolute;
+  background-image: url(assets/aporipantika.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position:left ;
 }
 .details{
+  position: relative;
   width: 70%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #fae281;
-  gap: 10%;
 }
 .date{
-  align-self:flex-end;
+  position: absolute;
+  top: -50%;
   border: 1px solid red;
   margin: 10px;
 }
 .product{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-40%,-60%);
   align-self:center;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 .product-details{
   width: 20%;
+  align-self: center;
 }
 
+.product-image{
+  width: 200px;
+  height: 200px;
+  background-image: url(assets/fairy.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.offer{
+  position: absolute;
+  top: 18%;
+  right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.price{
+  border-radius: 20px;
+  background-color: red;
+  padding: 10px;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+.company{
+  position: absolute;
+  right: 2px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  padding: 10px;
+}
 
+.logo{
+  width: 18px;
+  height: 18px;
+  background: url(assets/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.name{
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  color: var(--titleFontColor);
+}

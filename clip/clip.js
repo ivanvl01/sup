@@ -21,10 +21,12 @@ export const clip = new HTMLClip({
   fonts: [
     {
       type: `google-font`,
-      src: `https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Playfair+Display:wght@600&display=swaphttps://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap`,
+      src: `https://fonts.googleapis.com/css2?family=Work+Sans&family=Lato:ital,wght@1,300&family=Playfair+Display:wght@600&display=swap`,
     },
   ],
 });
 
 clip.addIncident(scene1, 0)
-clip.addIncident(slide1,2700)
+clip.addIncident(scale(1,".circle",500),2800)
+clip.addIncident(opacity(0,".circle",1),3300)
+clip.addIncident(slide1,3300)
