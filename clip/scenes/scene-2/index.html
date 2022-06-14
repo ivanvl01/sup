@@ -1,25 +1,98 @@
 <div class="container">
-  <div class="photo-wrapper">
-    <div class="photo"></div>
-  </div>
-  <div class="details">
-    <div class="date">
-      <div class="date-from">Από Δευτέρα 13/6</div>
-      <div class="date-from">Έως Σάββατο 18/6</div>
-    </div>
-    <div class="offer">
-      <div class="price">1+1</div>
-    </div>
-    <div class="product">
-      <div class="product-details">
-        <div class="product-name">FAIRY</div>
-        <div class="product-description">κάψουλες πλυντηρίου πιάτων</div>
+  <div class="products" mc-for="key,item" mc-of="initParams.products">
+    <div class="container-left" mc-if="key % 2 === 0">
+    <div class="{{'product-container product-container'+ key}}">
+      <div class="details">
+        <div class="date-wrapper">
+          <div class="date">{{item.date}}</div>
+        </div>
+        <div class="offer">
+          <div class="price">{{item.offer}}</div>
+        </div>
+        <div class="product">
+          <div class="product-details">
+            <div class="product-name-wrapper">
+              <div class="product-name">{{item.productName}}</div>
+            </div>
+            <div class="product-description-wrapper">
+              <div class="product-description">{{item.productDescription}}</div>
+            </div>
+          </div>
+          <div class="product-image" style="  position: relative;
+          width: 200px;
+          height: 200px;
+          background-image: url({{item.productImage}});
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: scale(0);"></div>
+        </div>
+        <div class="company">
+          <div class="logo"></div>
+          <div class="name">{{initParams.title}}</div>
+        </div>
       </div>
-      <div class="product-image"></div>
+      <div class="photo-wrapper">
+        <div class="photo" style="  position: absolute;
+        background-image: url({{item.backgroundImage}});
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position:left;"></div>
+      </div>
     </div>
-    <div class="company">
+    <div class="circle"></div>
+    <div class="outro">
       <div class="logo"></div>
       <div class="name">{{initParams.title}}</div>
     </div>
+  </div>
+  <div class="container-right" mc-if="key % 2 === 1">
+    <div class="{{'product-container product-container'+ key}}">
+      <div class="details">
+        <div class="date-wrapper">
+          <div class="date">{{item.date}}</div>
+        </div>
+        <div class="offer">
+          <div class="price">{{item.offer}}</div>
+        </div>
+        <div class="product">
+          <div class="product-image" style="  position: relative;
+          width: 200px;
+          height: 200px;
+          background-image: url({{item.productImage}});
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: scale(0);"></div>
+          <div class="product-details">
+            <div class="product-name-wrapper">
+              <div class="product-name">{{item.productName}}</div>
+            </div>
+            <div class="product-description-wrapper">
+              <div class="product-description">{{item.productDescription}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="company">
+          <div class="logo"></div>
+          <div class="name">{{initParams.title}}</div>
+        </div>
+      </div>
+      <div class="photo-wrapper">
+        <div class="photo" style="  position: absolute;
+        background-image: url({{item.backgroundImage}});
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position:right;"></div>
+      </div>
+    </div>
+    <div class="circle"></div>
+    <div class="outro">
+      <div class="logo"></div>
+      <div class="name">{{initParams.title}}</div>
+    </div>
+  </div>
   </div>
 </div>

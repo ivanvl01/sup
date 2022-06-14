@@ -2,15 +2,27 @@
     --titleFontColor: {{ initParams.titleFontColor }};
     --titleFontSize: {{ initParams.intro.titleFontSize}};
     --sloganFontSize: {{ initParams.intro.sloganFontSize}};
+    --backgroundColor: {{ initParams.backgroundColor }};
 }
 
 .container{
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 100%;
-  opacity:0;
+  font-family: 'Work Sans', sans-serif;
 }
+.product-container{
+  opacity:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.container-left .product-container{
+  flex-direction: row-reverse;
+}
+
 .photo-wrapper{
   position: relative;
   width: 30%;
@@ -19,25 +31,39 @@
   overflow: hidden;
 }
 
-.photo{
+/* .photo{
   position: absolute;
   background-image: url(assets/aporipantika.png);
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position:left ;
-}
+  background-position:left;
+} */
 .details{
   position: relative;
   width: 70%;
   height: 100%;
-  background-color: #fae281;
+  background-color: var(--backgroundColor);
 }
-.date{
+.date-wrapper{
   position: absolute;
   top: -50%;
-  border: 1px solid red;
-  margin: 10px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: var(--titleFontColor);
+  overflow: hidden;
+  padding:10px;
+  display:inline-block;
+  color:transparent;
+  border-radius: 50px;
+}
+.date{
+  background: var(--backgroundColor);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display:block;
 }
 .product{
   position: absolute;
@@ -48,28 +74,71 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
-}
-.product-details{
-  width: 20%;
-  align-self: center;
+  width: 50%;
 }
 
-.product-image{
+.container-right .product{
+  flex-direction: row-reverse;
+}
+
+.product-details{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  position: relative;
+  text-align: center;
+}
+
+.product-name-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.container-left .product-name{
+  position: relative;
+  left: -120%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.container-right .product-name{
+  position: relative;
+  right: -120%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.product-description-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.product-description{
+  position: relative;
+  top: -120%;
+  font-size: 12px;
+}
+
+/* .product-image{
+  position: relative;
   width: 200px;
   height: 200px;
   background-image: url(assets/fairy.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+  transform: scale(0);
+} */
 
 .offer{
-  position: absolute;
-  top: 18%;
-  right: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
+  position: absolute;
+  top: 18%;
+  right: 15%;
 }
 
 .price{
@@ -81,9 +150,6 @@
   font-weight: bold;
 }
 .company{
-  position: absolute;
-  right: 2px;
-  bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -91,10 +157,23 @@
   padding: 10px;
 }
 
+.container-left .company{
+  position: absolute;
+  bottom: 20px;
+  right: 120%;
+}
+
+.container-right .company{
+  position: absolute;
+  bottom: 20px;
+  left: 120%;
+}
+
+
 .logo{
   width: 18px;
   height: 18px;
-  background: url(assets/logo.png);
+  background: url({{initParams.logo}});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,4 +183,39 @@
   font-family: 'Playfair Display', serif;
   font-size: 13px;
   color: var(--titleFontColor);
+}
+
+.circle{
+  background-color: var(--backgroundColor);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  border-radius: 50%;
+}
+
+.outro{
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.outro .logo{
+  width: 30px;
+  height: 30px;
+}
+
+.outro .name{
+  font-size: 32px;
 }
