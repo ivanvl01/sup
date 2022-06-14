@@ -32,7 +32,7 @@ export default [
           productName:"Rice",
           productDescription:"Rice 1kg",
           productImage:"assets/rice.png",
-          offer:"1+",
+          offer:"1-1",
           date:"Monday 13/6 - Saturday 18/6",
           backgroundImage:"assets/rice-back.jpg"
         },
