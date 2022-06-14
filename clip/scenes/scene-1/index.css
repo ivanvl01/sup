@@ -21,7 +21,7 @@
 }
 
 .intro.left .image{
- background: url(assets/image1.jpg);
+ background: url({{initParams.intro.image1}});
  background-size: cover;
  background-position: center;
  width: 100%;
@@ -29,7 +29,7 @@
 }
 
 .intro.right .image{
-  background: url(assets/image2.jpg);
+  background: url({{initParams.intro.image2}});
   background-size: cover;
   background-position: center;
   width: 100%;

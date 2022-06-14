@@ -13,7 +13,7 @@ export const circleCombo = (selector,circle) => new Combo(
         },
         props: {
          selector:circle,
-         duration: 500,
+         duration: 600,
         },
         position: 0
        },
@@ -28,7 +28,7 @@ export const circleCombo = (selector,circle) => new Combo(
           selector:circle,
          duration: 1,
         },
-        position: 500
+        position: 600
        },
        {
         incidentClass: CSSEffect,
@@ -43,7 +43,7 @@ export const circleCombo = (selector,circle) => new Combo(
           selector:circle,
          duration: 1,
         },
-        position: 600
+        position: 700
        },
        {
         incidentClass: CSSEffect,
@@ -56,7 +56,7 @@ export const circleCombo = (selector,circle) => new Combo(
           selector:circle,
          duration: 1,
         },
-        position: 600
+        position: 700
        },
      ]
     },
