@@ -71,8 +71,8 @@
   align-self:center;
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  width: 50%;
+  gap: 30px;
+  width: 60%;
 }
 
 .container-right .product{
@@ -86,6 +86,7 @@
   gap: 0px;
   position: relative;
   text-align: center;
+  width: 50%;
 }
 
 .product-name-wrapper{

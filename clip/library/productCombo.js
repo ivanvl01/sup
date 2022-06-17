@@ -21,7 +21,7 @@ export const productComboLeft = (productContainer,productImage,image,productName
         attrs: {
          animatedAttrs: {
           transform:{
-            scale:1
+            scale:1.1
           }
          }
         },
@@ -239,7 +239,7 @@ export const productComboLeft = (productContainer,productImage,image,productName
         attrs: {
          animatedAttrs: {
           transform:{
-            scale:1
+            scale:1.1
           }
          }
         },
