@@ -1,5 +1,5 @@
 * {
-  --backgroundColor: {{ initParams.backgroundColor }};
+  --backgroundColor: {{ initParams.stylesheet.backgroundColor }};
 
 }
 #root {

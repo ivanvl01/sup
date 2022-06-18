@@ -2,11 +2,15 @@ export default [
   {
     name: "Default",
     value: {
-      backgroundColor: "#fae89d",
-      logo:"https://elisavetampatzidou.github.io/supermarket-clip/server/assets/logo.png",
-      title:"SUPERMARKETIO",
-      slogan:"It's all about your needs.",
-      titleFontColor:"#2a881e",
+      stylesheet:{
+        backgroundColor: "#fae89d",
+        titleFontColor:"#2a881e",
+      },
+      company:{
+        logo:"https://elisavetampatzidou.github.io/supermarket-clip/server/assets/logo.png",
+        title:"SUPERMARKETIO",
+        slogan:"It's all about your needs.",
+      },
       intro:{
         titleFontSize:"20px",
         sloganFontSize:"18px",

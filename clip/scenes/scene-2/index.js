@@ -1,12 +1,7 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./index.html";
 import css from "./index.css";
-import { opacity } from "../../library/opacity";
 import { scale } from "../../library/scale";
-import { moveLeft } from "../../library/moveLeft";
-import { moveRight } from "../../library/moveRight";
-import { moveTop } from "../../library/moveTop";
-import { backgroundPosition } from "../../library/backgroundPosition";
 import { productComboRight,productComboLeft } from './../../library/productCombo';
 
 
@@ -19,13 +14,13 @@ const slide1 = new HTMLClip({
     height: "450px",
   },
   initParams: {
+    stylesheet:"@initParams.stylesheet",
     products:"@initParams.products",
-    logo:"@initParams.logo",
-    title:"@initParams.title",
-    titleFontColor:"@initParams.titleFontColor",
-    backgroundColor:"@initParams.backgroundColor"
+    company:"@initParams.company"
   },
 });
+
+
 
 slide1.addIncident(productComboLeft(".container-left .product-container",
                                   ".container-left .product-image",
@@ -43,4 +38,7 @@ slide1.addIncident(productComboRight(".container-right .product-container",
                                   ".container-right .company",
                                   ".container-right .product-description",
                                   ".container-right .offer"),0)
+
+
+
 export default slide1;

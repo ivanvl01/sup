@@ -181,35 +181,35 @@ export const productComboLeft = (productContainer,productImage,image,productName
         },
         position: 4600
        },
-      //  {
-      //   incidentClass: CSSEffect,
-      //   attrs: {
-      //    animatedAttrs: {
-      //     transform:{
-      //       scale:1
-      //     }
-      //    }
-      //   },
-      //   props: {
-      //    selector:".container-left .outro",
-      //    duration: 300,
-      //    easing:"easeOutElastic"
-      //   },
-      //   position: 4700
-      //  },
-      //  {
-      //   incidentClass: CSSEffect,
-      //   attrs: {
-      //    animatedAttrs: {
-      //      opacity:0
-      //    }
-      //   },
-      //   props: {
-      //    selector:".container-left .outro",
-      //    duration: 100,
-      //   },
-      //   position: 7000
-      //  },
+       {
+        incidentClass: CSSEffect,
+        attrs: {
+         animatedAttrs: {
+          transform:{
+            scale:1
+          }
+         }
+        },
+        props: {
+         selector:".container-left .outro",
+         duration: 300,
+         easing:"easeOutElastic"
+        },
+        position: 4700
+       },
+       {
+        incidentClass: CSSEffect,
+        attrs: {
+         animatedAttrs: {
+           opacity:0
+         }
+        },
+        props: {
+         selector:".container-left .outro",
+         duration: 100,
+        },
+        position: 7000
+       },
      ]
     },
     {
@@ -399,35 +399,35 @@ export const productComboLeft = (productContainer,productImage,image,productName
         },
         position: 4600
        },
-      //  {
-      //   incidentClass: CSSEffect,
-      //   attrs: {
-      //    animatedAttrs: {
-      //     transform:{
-      //       scale:1
-      //     }
-      //    }
-      //   },
-      //   props: {
-      //    selector:".container-right .outro",
-      //    duration: 1000,
-      //    easing:"easeOutElastic"
-      //   },
-      //   position: 4700
-      //  },
-      //  {
-      //   incidentClass: CSSEffect,
-      //   attrs: {
-      //    animatedAttrs: {
-      //      opacity:0
-      //    }
-      //   },
-      //   props: {
-      //    selector:".container-right .outro",
-      //    duration: 100,
-      //   },
-      //   position: 7000
-      //  },
+       {
+        incidentClass: CSSEffect,
+        attrs: {
+         animatedAttrs: {
+          transform:{
+            scale:1
+          }
+         }
+        },
+        props: {
+         selector:".container-right .outro",
+         duration: 1000,
+         easing:"easeOutElastic"
+        },
+        position: 4700
+       },
+       {
+        incidentClass: CSSEffect,
+        attrs: {
+         animatedAttrs: {
+           opacity:0
+         }
+        },
+        props: {
+         selector:".container-right .outro",
+         duration: 100,
+        },
+        position: 7000
+       },
      ]
     },
     {

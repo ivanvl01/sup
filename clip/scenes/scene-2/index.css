@@ -1,8 +1,8 @@
 * {
-    --titleFontColor: {{ initParams.titleFontColor }};
+    --titleFontColor: {{ initParams.stylesheet.titleFontColor }};
     --titleFontSize: {{ initParams.intro.titleFontSize}};
     --sloganFontSize: {{ initParams.intro.sloganFontSize}};
-    --backgroundColor: {{ initParams.backgroundColor }};
+    --backgroundColor: {{ initParams.stylesheet.backgroundColor }};
 }
 
 .container{
@@ -115,7 +115,7 @@
 
 .product-description{
   position: relative;
-  top: -120%;
+  top: -190%;
   font-size: 12px;
 }
 
@@ -162,7 +162,7 @@
 .logo{
   width: 18px;
   height: 18px;
-  background: url({{initParams.logo}});
+  background: url({{initParams.company.logo}});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

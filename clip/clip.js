@@ -5,8 +5,6 @@ import initParams from "./initParams";
 import scene1 from "./scenes/scene-1";
 import initParamsValidationRules from "./initParamsValidationRules";
 import slide1 from "./scenes/scene-2";
-import { scale } from "./library/scale";
-import { opacity } from "./library/opacity";
 import { circleCombo } from './library/circleCombo';
 
 export const clip = new HTMLClip({
@@ -30,4 +28,3 @@ export const clip = new HTMLClip({
 clip.addIncident(scene1, 0)
 clip.addIncident(circleCombo("#root",".circle"),2800)
 clip.addIncident(slide1,3500)
-

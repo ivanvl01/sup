@@ -1,5 +1,5 @@
 * {
-    --fontColor: {{ initParams.titleFontColor }};
+    --fontColor: {{ initParams.stylesheet.titleFontColor }};
     --titleFontSize: {{ initParams.intro.titleFontSize}};
     --sloganFontSize: {{ initParams.intro.sloganFontSize}};
 }
@@ -54,7 +54,7 @@
 .logo{
   width: 150px;
   height: 150px;
-  background: url({{initParams.logo}});
+  background: url({{initParams.company.logo}});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
