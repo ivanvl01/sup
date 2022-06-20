@@ -38,7 +38,7 @@ export default [
           productName:"Rice",
           productDescription:"Rice 1kg",
           productImage:"https://elisavetampatzidou.github.io/supermarket-clip/server/assets/rice.png",
-          offer:"1 + 1",
+          offer:"2 for 2€",
           date:"Monday 13/6 - Saturday 18/6",
           backgroundImage:"https://elisavetampatzidou.github.io/supermarket-clip/server/assets/rice-back.jpg"
         },
@@ -58,7 +58,8 @@ export default [
           date:"Monday 13/6 - Saturday 18/6",
           backgroundImage:"https://elisavetampatzidou.github.io/supermarket-clip/server/assets/bucket-back.png"
         }
-      ]
+      ],
+      num:5
     },
   },
 ];

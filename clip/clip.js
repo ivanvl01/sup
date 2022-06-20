@@ -24,7 +24,7 @@ export const clip = new HTMLClip({
     },
   ],
 });
-
+clip.addIncident(slide1,3500)
 clip.addIncident(scene1, 0)
 clip.addIncident(circleCombo("#root",".circle"),2800)
-clip.addIncident(slide1,3500)
+

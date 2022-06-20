@@ -16,10 +16,10 @@ const slide1 = new HTMLClip({
   initParams: {
     stylesheet:"@initParams.stylesheet",
     products:"@initParams.products",
-    company:"@initParams.company"
+    company:"@initParams.company",
+    num:"@initParams.num"
   },
 });
-
 
 
 slide1.addIncident(productComboLeft(".container-left .product-container",
@@ -39,6 +39,5 @@ slide1.addIncident(productComboRight(".container-right .product-container",
                                   ".container-right .product-description",
                                   ".container-right .offer"),0)
 
-
-
+slide1.addIncident(scale(1,".outro1",1000,"@expression(initParams.num *5600)"),0)
 export default slide1;
